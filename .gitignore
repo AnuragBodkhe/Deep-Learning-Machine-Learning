@@ -1,21 +1,160 @@
-.venv/
+# ============================================================
+# Python
+# ============================================================
+
 __pycache__/
-*.pyc
-.ipynb_checkpoints/
-.env
-.vscode/
+*.py[cod]
+*$py.class
 
 # Python environments
+.venv/
 venv/
 env/
+ENV/
 
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# ============================================================
+# Jupyter Notebook
+# ============================================================
+
+.ipynb_checkpoints/
+
+# ============================================================
+# VS Code
+# ============================================================
+
+.vscode/
+
+# ============================================================
 # Datasets
-cifar-10-batches-py/
-*.tar.gz
-*.npz
+# ============================================================
 
-# Training outputs
+# CIFAR-10
+cifar-10-batches-py/
+
+# Cat vs Dog dataset
+CatvsDogs/
+catvsdogs/
+cat_dog_dataset/
+cats_and_dogs/
+dataset/
+datasets/
+data/
+
+# Common dataset archives
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+
+# NumPy datasets
+*.npz
+*.npy
+
+# CSV datasets - Uncomment if you don't want datasets in GitHub
+# *.csv
+
+# ============================================================
+# Machine Learning / Deep Learning Model Files
+# ============================================================
+
 *.h5
+*.hdf5
 *.keras
 *.ckpt
+*.weights.h5
+*.pb
+
+# TensorFlow SavedModel
+saved_model/
+saved_model.pb
+variables/
+
+# Checkpoints
 checkpoints/
+checkpoint/
+training_checkpoints/
+
+# ============================================================
+# Training Outputs
+# ============================================================
+
+logs/
+runs/
+wandb/
+mlruns/
+
+# TensorBoard
+tensorboard/
+
+# ============================================================
+# Generated Images / Plots
+# ============================================================
+
+# Uncomment these if you don't want generated plots
+# *.png
+# *.jpg
+# *.jpeg
+
+# ============================================================
+# Streamlit
+# ============================================================
+
+.streamlit/secrets.toml
+
+# ============================================================
+# Python Packaging
+# ============================================================
+
+*.egg
+*.egg-info/
+dist/
+build/
+wheels/
+
+# ============================================================
+# Testing / Coverage
+# ============================================================
+
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# ============================================================
+# Temporary Files
+# ============================================================
+
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# ============================================================
+# OS Generated Files
+# ============================================================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ============================================================
+# IDE Files
+# ============================================================
+
+.idea/
+
+# ============================================================
+# Local Configuration
+# ============================================================
+
+*.local
