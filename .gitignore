@@ -1,0 +1,42 @@
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Machine Learning models
+models/
+model/
+*.h5
+*.keras
+*.ckpt
+*.pth
+*.pt
+*.onnx
+
+# TensorFlow checkpoints
+checkpoints/
+
+# Python build files
+build/
+dist/
+*.egg-info/
+
+# OS files
+.DS_Store
+Thumbs.db
