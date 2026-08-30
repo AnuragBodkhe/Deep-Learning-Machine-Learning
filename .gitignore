@@ -60,6 +60,7 @@ train/
 test/
 validation/
 valid/
+dataset_raw/
 
 # Common dataset/archive files
 *.zip
