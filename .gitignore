@@ -1,42 +1,130 @@
-# Python virtual environments
+```gitignore
+# ============================================================
+# Python Virtual Environments
+# ============================================================
 .venv/
 venv/
 env/
 
-# Python cache
+# ============================================================
+# Python Cache
+# ============================================================
 __pycache__/
 *.pyc
 *.pyo
 
-# Environment / secrets
+# ============================================================
+# Environment / Secrets
+# ============================================================
 .env
 .env.*
 !.env.example
 
+# ============================================================
 # Jupyter
+# ============================================================
 .ipynb_checkpoints/
 
+# ============================================================
 # VS Code
+# ============================================================
 .vscode/
 
-# Machine Learning models
+# ============================================================
+# Machine Learning Models / Weights
+# ============================================================
 models/
 model/
+checkpoints/
+
 *.h5
+*.hdf5
 *.keras
 *.ckpt
 *.pth
 *.pt
 *.onnx
+*.pb
+*.tflite
+*.weights
+*.bin
+*.safetensors
 
-# TensorFlow checkpoints
-checkpoints/
+# ============================================================
+# Datasets
+# ============================================================
+datasets/
+dataset/
+data/
+train/
+test/
+validation/
+valid/
 
-# Python build files
+# Common dataset/archive files
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+
+# Common ML dataset formats
+*.csv
+*.tsv
+*.jsonl
+*.parquet
+*.feather
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.mat
+*.h5
+
+# Image/video datasets
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tif
+*.tiff
+*.webp
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# ============================================================
+# Training Outputs / Logs
+# ============================================================
+runs/
+logs/
+outputs/
+results/
+wandb/
+mlruns/
+tensorboard/
+
+# ============================================================
+# Python Build Files
+# ============================================================
 build/
 dist/
 *.egg-info/
 
-# OS files
+# ============================================================
+# Temporary / Generated Files
+# ============================================================
+*.tmp
+*.temp
+*.log
+
+# ============================================================
+# OS Files
+# ============================================================
 .DS_Store
 Thumbs.db
+desktop.ini
+```
