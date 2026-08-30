@@ -12,6 +12,7 @@ env/
 __pycache__/
 *.pyc
 *.pyo
+*.pyd
 
 # ============================================================
 # Environment / Secrets
@@ -21,7 +22,7 @@ __pycache__/
 !.env.example
 
 # ============================================================
-# Jupyter
+# Jupyter Notebook
 # ============================================================
 .ipynb_checkpoints/
 
@@ -56,13 +57,27 @@ checkpoints/
 datasets/
 dataset/
 data/
+
 train/
 test/
 validation/
 valid/
-dataset_raw/
 
-# Common dataset/archive files
+dataset_raw/
+**/dataset_raw/
+
+# Common dataset folders inside assignments
+**/datasets/
+**/dataset/
+**/data/
+**/train/
+**/test/
+**/validation/
+**/valid/
+
+# ============================================================
+# Dataset Archives
+# ============================================================
 *.zip
 *.rar
 *.7z
@@ -71,31 +86,17 @@ dataset_raw/
 *.tgz
 *.gz
 
-# Common ML dataset formats
-*.csv
-*.tsv
-*.jsonl
+# ============================================================
+# Large Dataset / ML Data Files
+# ============================================================
+*.npz
+*.npy
 *.parquet
 *.feather
 *.pkl
 *.pickle
-*.npy
-*.npz
 *.mat
-*.h5
-
-# Image/video datasets
-*.jpg
-*.jpeg
-*.png
-*.bmp
-*.tif
-*.tiff
-*.webp
-*.mp4
-*.avi
-*.mov
-*.mkv
+*.jsonl
 
 # ============================================================
 # Training Outputs / Logs
@@ -107,6 +108,12 @@ results/
 wandb/
 mlruns/
 tensorboard/
+
+# TensorFlow / Keras generated files
+checkpoint
+checkpoint.*
+*.index
+*.data-*
 
 # ============================================================
 # Python Build Files
@@ -128,4 +135,20 @@ dist/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# ============================================================
+# IDE / Editor Files
+# ============================================================
+.idea/
+
+# ============================================================
+# Local Configuration
+# ============================================================
+*.local
+
+# ============================================================
+# Cache / Temporary ML Files
+# ============================================================
+.cache/
+.cache/
 ```
